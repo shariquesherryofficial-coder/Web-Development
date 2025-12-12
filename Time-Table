@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Navigation:</b>
+    <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li></ul>
+    <ul>
+    <li><a href="../timtable.html">Time-Table</a></li></ul>
+    <ul>
+    <li><a href="my cv.html">My CV</a></li>
+  </ul>
+</nav>
+    <h2>Daily Routine Time-Table</h2>
+        <table bgcolor="off white" width="700">
+    <tr bgcolor="grey" align="center">
+      <th>Days</th>
+      <th width="100">8-2</th>
+      <th width="100">2-2:30</th>
+      <th width="100">3-5</th>
+      <th width="100">6-7</th>
+      <th width="100">8-9</th>
+      <th width="100">10-11</th>
+      <th>12-7</th>
+    </tr>
+    <tr bgcolor="lightgrey" align="center">
+      <td width="100">Monday</td>
+      <td width="100">Schooling</td>
+      <td width="100">Eating Food</td>
+      <td width="100">Sleeping</td>
+      <td width="100">Namaz</td>
+      <td width="100">Watching Drama</td>
+      <td width="100">Study</td>
+      <td width="100">Sleeping</td>
+    </tr>
+    <tr bgcolor="lightgrey" align="center">
+      <td width="100">Tuesday</td>
+      <td width="100">Schooling</td>
+      <td width="100">Eating Food</td>
+      <td width="100">Sleeping</td>
+      <td width="100">Namaz</td>
+      <td width="100">Watching Drama</td>
+      <td width="100">Study</td>
+      <td width="100">Sleeping</td>
+    </tr>
+    <tr bgcolor="lightgrey" align="center">
+      <td width="100">Wednesday</td>
+      <td width="100">Schooling</td>
+      <td width="100">Eating Food</td>
+      <td width="100">Sleeping</td>
+      <td width="100">Namaz</td>
+      <td width="100">Watching Drama</td>
+      <td width="100">Study</td>
+      <td width="100">Sleeping</td>
+    </tr>
+    <tr bgcolor="lightgrey" align="center">
+      <td width="100">Thursday</td>
+      <td width="100">Schooling</td>
+      <td width="100">Eating Food</td>
+      <td width="100">Sleeping</td>
+      <td width="100">Namaz</td>
+      <td width="100">Watching Drama</td>
+      <td width="100">Study</td>
+      <td width="100">Sleeping</td>
+    </tr>
+<tr bgcolor="lightgrey" align="center">
+      <td width="100">Friday</td>
+      <td width="100">Schooling</td>
+      <td width="100">Eating Food</td>
+      <td width="100">Sleeping</td>
+      <td width="100">Namaz</td>
+      <td width="100">Watching Drama</td>
+      <td width="100">Study</td>
+      <td width="100">Sleeping</td>
+</tr>
+<tr bgcolor="lightgrey" align="center">
+      <td width="100">Saturday</td>
+      <td width="100">Sleeping</td>
+      <td width="100">Eating Breakfast</td>
+      <td width="100">Mobile Use</td>
+      <td width="100">Namaz</td>
+      <td width="100">Watching Drama</td>
+      <td width="100">Study</td>
+      <td width="100">Sleeping</td>
+    </tr>
+    <tr bgcolor="lightgrey" align="center">
+      <td width="100">Sunday</td>
+      <td width="100">Sleeping</td>
+      <td width="100">Eating Breakfast</td>
+      <td width="100">Mobile Use</td>
+      <td width="100">Namaz</td>
+      <td width="100">Watching Drama</td>
+      <td width="100">Study</td>
+      <td width="100">Sleeping</td>
+    </tr>
+</tr>
+</table>
+</body>
+</html>
