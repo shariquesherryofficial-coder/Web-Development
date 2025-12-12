@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timex Watch Collection</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;background:#f5f5f5}
+    h1{text-align:center;margin:20px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px;padding:0 20px}
+    .card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.1);text-align:center}
+    .card img{width:100%;height:200px;object-fit:contain;background:#fafafa;padding:10px}
+    .card h3{margin:10px 0;font-size:1em}
+    .card p{margin:0 0 10px;color:#555}
+    .card .price{font-weight:bold;color:#000}
+  </style>
+</head>
+<body>
+  <b>Navigation:</b> 
+  <nav>
+  <ul><li><a href="index.html">Back to Home</a></li></ul>
+    <li><a href="../collection.html"></a></li>
+  </nav>
+<h1>Timex Watch Collection</h1>
+
+<div class="grid" id="collection"></div>
+
+<script>
+  // --- Data (replace / extend as needed) ---
+  const watches = [
+    { id: 'TW2W78000', name: 'Timex Q LCA', price: 107, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz49i5rUPdf0lso5ROmsIeTLMLhEQgyQFeIQ&s', category: 'Q Series' },
+    { id: 'TW2W45200', name: 'Waterbury Metropolitan', price: 337, img: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQEhURExITFhMSGBUYFRMWFxYTFRcVFxMXGBgYFxUZHSgiGB0lGxoTITEhJS0rLy4uGh8zODMsNygtLjcBCgoKDg0OGxAQGy0mICY3LSstLSstLS0tNS02Ly0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcIAgH/xABEEAABAwEFAwgHBwIDCQAAAAABAAIRAwQSITFBBVFhBgcTInGBkaEyQlKSscHwFCNicoLR4aKyCENTFyQzNHOkwtPx/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAJREBAQACAgIBAwUBAAAAAAAAAAECEQMxEiFBEzJRBCIjgZFh/9oADAMBAAIRAxEAPwDuKIiAiIgIiICIiAiIgIiICLBbLWyix1So4MY0SXHABUPaXO1ZKcilTq1Y1wY0+OPkotkWxwyy6joaLkVXnld6tkb31CT4ALH/ALZqkE/ZGYR6517uCjzi/wBDP8OwoudbA51KdpcGOs1Rsxi1weMe0BdBoVg9oc0yDkVMsqmWNx7ZERFKoiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIi+arw0FxMBoJJ3ACSg4pz0con1LU2wsdFOk1peAfSqvxE77rYgfiPBUmz7JquEijUj8V2n/eQpSwWk2q0VbV61Z7nScwHOkNB0gEDBWyz2JsARPEwfM96wvuvQn8eOlIOwqvrCm3AxNQHjHVafJa1fY74Iv0w7MemBOV2S3hgr7Us4kwBnpnl5fW9Rm0bPhPiliZnv5qucki+naqdN3rnuIGJx7A49i7Jzc7YdUfaLO8k3btWn+V8te0Hg5s/rC4/smftQzuhryd03CAeBxVx5N7WZZLXRrVHhlIirTqPOTWuZfBP6qbB3qn1PHOT8q8vHuW9uzotTZ+06Nobeo1WVG72ODo7YyW2upwCIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAqzzlW/oNmWp4MF1M0wcjNUikI96VZlzTn3tl2xUaIzrV2yN7abXO/uuKL0vxzeUUHkzShgy0KttGph9H/4qrsJsAZYQMcY/ZT4cR9fNZYu3P2ydNJd+b/xaVFbTqxM/se5bd/F+ORE48Bx3KF2rWw+p8PruU1GM1UTsV02mo7dSM99Rg+RUhygaH2eq0GSGkiM5An5KqVqrhTrOa4hzn0mAjAjCo84/pCjGvquwfWfGsmTuWGXFcsplvppln3NN3kRti0Wa0NfRqObAc5x0DWiSSO4DjML1ts+ualKnUIul7GOLdxc0GPNeUK+0KdR5LaNKixxbfZTaWtN2BjJOGpAgE6L1hYXTTYd7GmP0hdWNcXJLJNs6IisxEREBERAREQEREBERAREQEREBERAREQFxjntrmrbbHZwCRTY97gN9R4A8mHxXTLZtVzaxYIutug9pEnHv8l512pypr1LTWrvN6o5xbeIb6LOoIAHVwaMhmSVj9XHLcnw6OLju91aaBDGmadVzrrGkNYQJDjJBfGYgdyVdrEkj7LaBIEdVk64yDA71RKu3bU441HeJWB20q5IJe/DLEpvTp8dr901Zwvss460YVKgacMMSAeOq1NoWa0ubLm2dsYwHuOn5c1T27Zrt1xK2aXKCoPSkhT5I+nGGtScyg4mJNoAwxGFF0fFyijGOJMrqfInk9ZNpWSq6v0rQ2uA0U3NabzaQJcSWn/UIhU/lvsClY6lM0r/R1qbiA918ipTq1KVQThhLWu/Uq+Ut0puS6fPIDZbLTtCzUarb1OpU6zdHNa0vIO8G7B4FerAvKfN5TqnaFl6EEvFZhgaMkdITwDL0r1YtMGPP3BERXYCIiAiIgIiICIiAiIgIiICIiAiIgIi1NqWno6ZOJJ6rQBLi44AAan9lFupsntWbQ+S949ZziPEx8lxux82trr02122izNZVF8MeavStJJlr2NYYcDIK6vbbXc6l2XQMDixv/sP9P5lqPtJB+8cS4+p6TvcGUcYXlcPLcbfW7Xdl8aqhWDmhtFQA1LUxh3Naag8S5vwUwOZfD/nHT+UfCPmrnZ61pcPu6YaN7yMeIgFZ79sGN+jrhJjDPGF1S534Z3P/AK5hbuZq0sE07Sx8aFvR+Yc4+Sp+2eStuss9JQe4DNzOuI3kReA4kBegRbrWz06THjU0ziB2GJWOptJlXqkEEeo8QR8x2qbllj3EzO3qufc1tQixOn1q1R3A9Sk3D3Y7lHc51mmy0ag/yLVaKXaLRSZXB8Q/zXQq5utgAFomGnNsmTdcMRiSdewqtcqbN09ittMem2nRtDWkQR0DyKh4zTeMRuWPFnvlt/Kcuo3f8O1Nv2e0uui+KrRegXrhpg3ZziQTC68uM/4dK3VtjNxoOHeKoPwC7MvQx6c3JNZaERFKgiIgIiICIiAiIgIiICIiAiIgIiICjrbUvGNBmfitq11breJwCqXKa3EAWdhMvEvIzDJAgcSSB3jMSuX9Rnfsjbix+a1bfazaKl2lAayQa2ExrdJ9Ecf5C37DsllGOriTBJxJOhGfnlwyWzsWwBjBEcYOGXoxw+sypGrRLojQg+CtxcUxx3O1c87bq9FEB2I3+YwnHLJatqOJywdGABOLcgN5+azOLqbHEC8ReIblOsZHHuUbbNrOYYNkquMSXNALJBcCL8To0zGIfOhV8scspPeqpLJW+yneaCYkhpMbxiMRmtG2WNtXqlt67JnJ4mSLhw4Dszlb9itF+9925l0xiIDuqDLcMRiR2g8FmZSgud7UeQVspbJP9JflUrVYnUzBN5pMNfx9l3su45HhitrZFBzcalMXTLReHWDXek0g+qd3yynbVSa4FpghwgtJjCcTvn6wWtst+LqDzJaJa7O/TOA7YyK4+Ti8cvLFvjnvHVc42BSq7B2hWs9GgatK1tY+kS4Aiixzy4daLz2hxETOAOq7Fs+2Csy+0yJcPdcROesT3qvbZ2a19x5Evs5c5jtYdTLHDiC0zxLAtnkW77qo32Krh/S3+V0YZ7qmc3NrCiIt2QiIgIiICIiAiIgIiICIiAiIgIiII22ul8bh8VT7B9/XNQzD3F2ESGNN1me43irLtR0CsdzXn+hVzk4QCJjBrIwkz0YcY3HE+K4Zd8u66dfs9LJWom9IGECYwnrAxgstFxYwktMTIbmQ36kxxX7ZLSH4awD3Lbhb4yX92NY3fVatOu14kHDzX0sVaxY3mENPke0LQdtEUXFj4nMCcYkAmM7oJYJ/EJhV+vcPXJ/vwn6e/tSqxVbQG4DE6DMnsGq/G3nj2WnsLiPgPPuWajRDch2nMntKvlcs/t9T8qySdottje6pfc2MQYBGmUnhuX5tGn0VyqBHQuxyEscYcBGgkZ7u9StpqXRMT9eQULb7T0ge2BBa8cZa12HkSs8cMMJcf79rXLLL2mrQwHHt+vj4qP5Ji6+0M3Pa73gf2W1Y3X6NMnVrPgJUKzaLqVA1aRo34bUqYdYta69UvECCYL8gMToq4ZTG+1rLYuSL8BX6uxiIiICIiAiIgIiICIiAiIgIiICIiCE2nSvdK3e1w8WKB5LCXR+Cnu9i6ZniDkrXamQ8O3/JVCh/u1pLD6IcWjQXKhvUyf1Xge0Lix/byujvBa7LZAwl2p7IA3ADJZ4Wha67tDAAJzwJwgRr2LfaVvhZu4ydM8pe6/AIWlbdnMqTM45gGJhZ7ZWc1ssaHHUF1wAQcSfDxUTT2244llMNwk9PRMEiYMOgnv8AGFbPDHOasUmVxvpL0jgF9ly0bFai/rFt0Oy6zHifWEtJxBBBX3aK2gUwrDbX3vkoqo2L5x6rHnEYSWnXyhbFWoZ4SBGuIP8AHgtauLzbutV0Zk9UYuPDADxWNyxu60ks1EtZn3KDN7WMw7go+nsKpXslJjXUxfZSvPg3nUyBf0xJbO7FZbfVL29G09aoQwRpf6s9wJd+kq0U2BoDRgAAAOAVeHCZy2pzyuN9P0BfqIutiIiICIiAiIgIiICIiAiIgIiICIiDHXZI46Kq8p7IKjRUaJewEObq6mcx2giR2cFblD7aoEQ9mZ03mNOK5v1GHryjXiy96qH2BtDqgEzGuOLQDBAjPQjPwhT1SoQJEcZ3KnOs7mkvpjMy6mMJPtM3Hh/ESuztptqC6XQcbzTIkxAk5ty8kw5fLHXynLHV2m6DiWgkQTp8O+IXx9jpABvR0wNG3WxPZCytqfLHfPyWvWHWlsScAThAbN7DM5HAZrTK3GemU1b7ZK7WsYGNAAGTQAABwGiiqVYkkGMCYO8aYdmfGVubQridTl4E8d2aibVVGZgA3gXEmIxyO/0SY3d6rnuWWf2tjrWmeoA46QJl2UQcQcMoUdbLWGmcsIbpDM5O4k49kL5tduwjyOZO9w0H4fFQ9atBDnHrPxYDjgM6rh7IjAes6BlK5ebl8r44t+PDU3Vu5MUHVahrO9GlIbP+oRj7rSR2veNFalWeb6oXWVzic61UN1hrXXc9ciSdSSdVZl3cWMmEkc+e/K7ERFdUREQEREBERAREQEREBERAREQEREBa20KN+m4axI7RiPNbKKLNzSZdKnVtDILnkNAEl5gCPxaTx+K+6my2VcSCHaOHVd271F8qrDNntNPfTrgcOo6D8CuB2blNtAVOnFtr3zib1QvHZcdLYGgjBcXHx+rt1Xdvp6LOzq9P0KoI3OHzGfgvl1otIz6Pt6/7LkWz+dfaLBFQUKoGrmlrjxJBjyW87ndrHA2OlJ16V3wurTWXxUXjvzHQq1SqcXOYDva295uy7gtN8zOJd7RMu8dO6FzS2851seOpRoM4m88/EKr7S29bbRjVtL49lrujb7rIntOKi4ZZd0xx11HbzAGADicRPoCcj+PsGG86KMqN6z3Ey4kAuOZ17sgIGAAELV5B1C7Z9AucXOiqC4kkmLTVzJ4QtgGRO8u8yuLKeNsb4+9L7zdtiwt41LQf+5qKyqC5DNAsFnIEBzL/AL7i/wCanV62M1I4M/uoiIrKiIiAiIgIiICIiAiIgIiICIiAiIgIiINa02FlQOa5sh4Id3tunyXnfb3I6lTtNezM6j6LuqJJDmEXmQd9wsnvXpFcV53aRo7Sp1QQOmos4S5j3NOPYWKtkjbhvvTmVu2G+kYM/XFan2Fw3+avNSlUqCbkzr1j8Co2vYXg43RiMyNSBl3qtxjrmaqNsLuK/X2W7i49ysNrs72j0D2gXh4iQq9bZOf7bvkosiJt0/kBb2jZ7GFuIdVDXTEAvJxEGesXblJXg1vBo4aD6PeoHkC6bE2MYqVB5h2A71MbVB6GoG5ljwO0sIGXGF5vLbeSxphJJt1bktQ6OxWVnsUKIPaKTZUovijTDWhoyaAB2AQvteu8sREQEREBERAREQEREBERAREQEREBERAREQFy3nzsYNOzVo9F76fvhrh/YV1JUfnjst/Zr3gT0NSk/uvhh8nk9yjLpfj+6bcnsmzmPa0OGDjGsAxhrAnjGi+62wKXsRIOeMO4+Y7+1b+xPvGDLSNMcCDOmQUjcL2g7xlrllxg4KNt7jFLt2yWtksLxEYAnAYyOMQFWrbZzBMzjB3wRgfGV0HadAwcD2RpxER9a4qm7VEB/C6R234+BOSiryT8rZzbPAsr2nSq/wADTpq19FffSYB6dagD+U12Xsfy3lTubN80qw3VAfFg/ZX/AGBR6S22dvsvdUPYyk+D7xYvPs3z/wBtbdcddSREXpvNEREBERAREQEREBERAREQEREBERAREQEREBR3KLZwtVlr2c/51J7BwLmkA9xgqRRCennTkdaS0mm7qlpIIJxDjhGOoP1uu3RjGIGMjKbrpOExre+GKqPOVsp2ztoPrMB6KuelbhLZd6YP6pOerd6wWHlWwwTUukCB1HHdjIByx8VnHXdZe4tG0bECMdeBGJduHePBc45Q2ci9P4fM/wAEKzVuVFMj/iDXG69p7BeB47gqxtzaLakgE4nQEauEY8D8FKZElzavg12/9M/3j9l1rkJZ71pfU/0qQbwmq+T5Uh4rjvNy+LU+nlfYc/aa4GPC8u98g7Lds5q613l4P4AAxncQ29+pc+HH/N5HLnPDUWVERdbjEREBERAREQEREBERAREQEREBERAREQEREBERBG7e2HRttLoqzZGYIwc072n6C5htbmYMk0K7SDo8Fp8RM+S7CiiyVbHOzp5/q80NvGVw9jx44wtYc020ZE0xAOd+nl7y9Eoo8Yv9bJyHkzzSvYZtDw2SCbhl+ByBiBrjiut0aQY0MaAGtADQMgAIAHcvtFMmmdyt7ERFKBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf//Z', category: 'Classic' },
+    { id: 'TW2Y22900', name: 'Marlin Automatic', price: 259, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkz_MLQZgnYi5UOYjG9svm5lTzTxWtdK1KtA&s', category: 'Marlin' },
+    { id: 'TW2W78001', name: 'Q Falcon Eye', price: 199, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Y_eje4lRcgauE6-6OG6AveYQvG7a-Mn-vQ&s', category: 'Q Series' },
+    { id: 'TW2W78002', name: 'Q Continental Day & Date', price: 175, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcCj20yc8BteuFggvY-KxjD49RF7c31cfEWQ&s', category: 'Q Series' },
+    { id: 'TW2W78003', name: 'Marlin Sub‑Dial Automatic', price: 279, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgB8DaHSxOvtOafXY7KTwXlEwxUPtV4LdDHg&s', category: 'Marlin' },
+    { id: 'TW2W78004', name: 'Expedition North Freedive', price: 159, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHsSTBRjszQTMa3cO8gIzKSnf6chqp34hTIQ&s', category: 'Expedition' },
+    { id: 'TW2W78005', name: 'Ironman Classic 30‑Lap', price: 99, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJHHa10_lg-lN9p_fWaGtuRX__J5jmV4Op2w&s', category: 'Ironman' },
+    { id: 'TW2W78006', name: 'Standard 40 mm Leather', price: 139, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStIicgZ9VRekFStCgrnevnEYhHDc9WFx7ABg&s', category: 'Standard' }
+    // add more entries here …
+  ];
+
+  // --- Render ---
+  const container = document.getElementById('collection');
+
+  watches.forEach(w => {
+    container.innerHTML += `
+      <div class="card">
+        <img src="${w.img}" alt="${w.name}">
+        <h3>${w.name}</h3>
+        <p>${w.category}</p>
+        <p class="price">$${w.price}</p>
+      </div>`;
+  });
+</script>
+</body>
+</html>
