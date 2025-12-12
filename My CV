@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Navigation:</b>
+    <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li></ul>
+    <ul>
+    <li><a href="timetable.html">Time-Table</a></li></ul>
+    <ul>
+    <li><a href="../my cv.html">My CV</a></li>
+  </ul>
+</nav>
+        <table>
+            <tr>
+                <td><h1><center>MUHAMMAD SHARIQUE</center></h1></td>
+               </tr>
+               <tr>
+                <td><center><h1>CV</h1></center></td>
+            </tr>
+            <center><img src="c:\Users\HP Laptop\Downloads\WhatsApp Image 2025-12-12 at 22.58.36_c48b884b.jpg" width="200" height="350"></center>
+            <tr>
+                <td><b>CONTACT DETAILS:</b><br><br>
+                    <b>ADDRESS</b> - Gulistan-e-Jauhar,Karachi Block 18<br>
+            <b>DISTRICT</b> - East<br>
+        <b>MOBILE NUMBER</b> - 03152941372<br><br>
+    </td>
+            </tr>
+            <tr>
+                <td><b>CAREER OBJECTIVE:<br><br></b></td>
+            </tr>
+            <tr>
+                <td>To work in a challenging environment where my knowledge 
+                    and experience can be shared and enriched.
+                    </td>
+            </tr>
+            <tr><td><br><b>
+            ACADEMIC QUALIFICATION:<br><br></b></td></tr>
+            <tr>
+                <td><div><ul>
+                    <li>Matriculation</li>
+                    <li>High School - The Academy</li>
+                    <li>Typing - English</li>
+                </ul></div></td>
+            </tr>
+            <tr>
+                <tr><td><b>SKILLS:</b></td></tr>
+                <tr>
+                    <td><div><ul>
+                        <li>Graphic Designing</li>
+                        <li>Video Editing & Animations</li>
+                        <li>Web Development (HTML,C++,JAVASCRIPT)</li>
+                    </ul></div></td>
+                </tr>
+                <td><b>EXPERIENCE:</b><br>
+                    <div><ul>
+                <li>2 months of "Video Editing" course</li>
+                <li>4 months of "Graphic Designing" course</li>
+                <li>Basic knowledge of Computer</li>
+                </div></td></ul>
+            </tr>
+            <tr>
+                <td><b>STRENGTHS:</b>
+                    <div><ul>
+                        <li>Hardworking and Confident</li>
+                        <li>Responsible</li>
+                        <li>Self-Motivation</li>
+                        <li>Smart Working</li>
+                    </ul></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <b>PERSONAL DETAILS:</b><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <b> Name:</b> Muhammad Sharique<br>
+                   <b> Father's Name:</b> Fazal Hussain<br>
+                   <b> Date of Birth:</b> 25/11/2008<br>
+                   <b> Email:</b> shariquesherry25@gmail.com<br>
+                   <b> Gender:</b> Male<br>
+                   <b> Martial Status:</b> Single<br>
+                   <b> Nationality:</b> Pakistani<br>
+                   <b> Languages:</b> Urdu, English<br>
+                   <b> Hobbies:</b> Playing Games, Watching Movies etc<br><br>
+                </td>
+            </tr>
+            <tr>
+                <td><b>DECLARATION:</b><br><br></td>
+            </tr>
+            <tr>
+                <td>I hereby declare that the above information given by me is 
+                    true to the best of my knowledge and belief.I work in your 
+                    esteemed co-operation with my full devotion</td>
+            </tr>
+        </table>
+    </body>
+</html>
