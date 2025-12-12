@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <b>Navigation:</b>
+    <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li></ul>
+    <ul>
+    <li><a href="timetable.html">Time-Table</a></li></ul>
+    <ul>
+    <li><a href="my cv.html">My CV</a></li>
+  </ul>
+</nav>
+    <h1><center> WELCOME TO MY WEBSITE</center> </h1>
+    <h2><center> PRODUCT PAGE</center> </h2>
+   <b>Product Name:</b> TimeX Watches
+<center><img src="data:image/jpeg;base64,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"><center>
+<center><h2> TimeX - Elevate Your Time </h2></center>
+Welcome to TimeX, the premier destination for luxury smartwatches that seamlessly blend style,
+innovation, and functionality. Our mission is to empower individuals to live their best lives,
+whether they're fitness enthusiasts, busy professionals, or simply those who appreciate the
+finer things in life.
+
+<h2>Our Story</h2>
+
+At TimeX, we're passionate about creating watches that inspire and delight. Our team of expert designers, engineers, and craftsmen are dedicated to pushing the boundaries of watchmaking, combining cutting-edge technology with timeless design principles. We're committed to delivering exceptional quality, precision, and style, ensuring every TimeX watch is a masterpiece.
+
+<h2>Collections</h2>
+
+Explore our curated collections, each carefully crafted to meet the unique needs and tastes 
+of our discerning customers:<br><br>
+
+<b>- Sport:</b> Designed for the active individual, with rugged durability and advanced fitness
+features. Our Sport collection is perfect for those who push their limits and demand more from
+their watch.<br>
+<b>- Classic:</b> Timeless design meets modern technology, perfect for formal and casual occasions.
+Our Classic collection is designed for those who appreciate understated elegance and 
+sophistication.<br>
+<b>- Premium:</b> Luxury meets innovation, with premium materials and exclusive features.
+Our Premium collection is the ultimate expression of style and sophistication, perfect 
+for special occasions or everyday wear.<br>
+
+<h2>Key Features</h2>
+
+<b>- Heart Rate Monitoring:</b> Track your heart rate in real-time, perfect for fitness 
+enthusiasts and health-conscious individuals. Our advanced heart rate monitoring system 
+provides continuous tracking, allowing you to optimize your workouts and stay within your 
+target zones.<br>
+<b>- GPS Tracking:</b> Explore new routes and track your workouts with precision GPS. 
+Whether you're running, cycling, or hiking, our watches provide accurate distance, pace, 
+and route tracking.<br>
+<b>- Customizable Watch Faces:</b> Personalize your watch to match your style, with a wide range 
+of faces and straps to choose from. From sleek and modern to classic and elegant, our watch faces 
+are designed to complement your unique taste.<br>
+<b>- Notifications and Music Control:</b> Stay connected on-the-go, with notifications and music control at your fingertips. Receive alerts, emails, and social media notifications, and control your music playlists with ease.
+
+<h2>Why Choose TimeX?</h2>
+
+<b>- Style Meets Function:</b> Our watches are designed to make a statement, while providing 
+advanced features to keep up with your lifestyle. From the boardroom to the gym, our watches are 
+the perfect accessory.<br>
+<b>- Quality Assurance:</b> We prioritize quality and craftsmanship, ensuring every watch meets 
+our high standards. Our watches are built to last, with premium materials and expert construction.<br>
+<b>- Innovative Technology:</b> Stay ahead of the curve with our cutting-edge smartwatch technology. Our watches are designed to keep you connected, fit, and fashionable, with features like heart rate monitoring, GPS tracking, and more.
+
+<h2>Customer Testimonials</h2>
+
+"TimeX has revolutionized my fitness routine. The heart rate monitoring is incredibly accurate, 
+and the watch face is so stylish!" - Rohan, fitness enthusiast.<br><br>
+
+"I love my TimeX watch! It's the perfect accessory for work and play. The notifications are so 
+convenient, and the battery life is amazing." - Aisha, busy professional
+
+<h2>Join the TimeX Community</h2>
+
+Stay connected with us on social media and join the TimeX community. Share your TimeX moments, 
+showcase your style, and be the first to know about new collections, promotions, and events.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cwm8740aq0Y?si=nYRn7QCDaHSHZjtO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m11!1m3!1d3!2d67.0864031!3d24.9325093!2m2!1f0!2f90!3m2!1i1024!2i768!4f75!3m3!1m2!1s0x3eb33f1c17f56277%3A0x254fb554a64a9779!2sInternational%20Watch%20Company%20-%20LuckyOne%20Mall!4v1765309683832" width="600" height="450" style="border:0;" 
+allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+
+Explore our collections, find your perfect watch, and experience the art of timekeeping redefined.<br><br>
+
+<!-- Header Section -->
+<header>
+  <nav>
+      <li><a href="collections.html">Collections</a></li><br>
+      <li><a href="contact.html">Contact</a></li>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>TimeX Sport</h1>
+  <p>Our latest collection, designed for the active individual.</p>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <h2>Key Features:</h2>
+    <li>Heart Rate Monitoring</li>
+    <li>GPS Tracking</li>
+    <li>Customizable Watch Faces</li>
+    <li>Notifications and Music Control</li>
+</section>
+
+<!-- Product Details Section -->
+<section class="product-details">
+  <h2>Product Details:</h2>
+  <p>Water-resistant up to 50 meters</p>
+  <p>Battery life up to 5 days</p>
+  <p>Compatible with iOS and Android devices</p>
+</section>
+
+<!-- Customer Reviews Section -->
+<section class="customer-reviews">
+  <h2>Customer Reviews:</h2>
+  <p>"I'm loving my TimeX Sport! The heart rate monitoring is so accurate and the watch face is super stylish." - Rohan, 5/5 stars</p>
+</section>
+
+<!-- Call to Action Section -->
+<section class="call-to-action">
+  <h2>Get Yours Today!</h2>
+  <button>Buy Now</button>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <p>Copyright TimeX</p>
+  <p>Terms and Conditions</p>
+  <p>Privacy Policy</p>
+</footer>
+</body>
+</html>
