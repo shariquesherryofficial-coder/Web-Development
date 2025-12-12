@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Navigation:</b>
+    <nav>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li></ul>
+            <li><a href="../contact"></a></li></ul>
+            <ul>
+    </nav>
+<!-- Contact Section -->
+<section class="contact">
+  <h1>Get in Touch with TimeX</h1>
+  <p>We're here to help you with any questions or concerns you may have about our products or services.</p>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject">
+      <option value="product-inquiry">Product Inquiry</option>
+      <option value="order-status">Order Status</option>
+      <option value="return-exchange">Return or Exchange</option>
+      <option value="other">Other</option>
+    </select><br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea><br><br>
+    <button>Send</button>
+  </form>
+  <h2>Address:</h2>
+  <p>TimeX Inc.</p>
+  <p>123, Luxury Lane</p>
+  <p>Karachi, Sindh 74000</p>
+  <p>Pakistan</p>
+  <h2>Phone:</h2>
+  <p>+92 21 111 123 456</p>
+  <h2>Email:</h2>
+  <p><a href="mailto:info@timex.pk">info@timex.pk</a></p>
+  <h2>Follow Us:</h2>
+  <ul>
+    <li>Facebook</li>
+    <li>Instagram</li>
+    <li>Twitter</li>
+  </ul>
+</section>
+</body>
+</html>
